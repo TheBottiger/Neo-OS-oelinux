@@ -1,8 +1,8 @@
-# wire-os
+# Neo-Os
 
-The main repo for WireOS.
+The main repo for Neo-OS.
 
-WireOS serves as a nice, stable, and maintained base for Vector CFW.
+Neo-OS serves as a nice matrix experience and maintained base for Vector CFW.
 
 This builds the OS, the /anki programs (`victor`), and creates a final OTA. This repo can be thought of as `wire-os-oelinux`.
 
@@ -26,6 +26,7 @@ This builds the OS, the /anki programs (`victor`), and creates a final OTA. This
 ## Build
 
 - Note: you will need a somewhat beefy **x86_64 Linux** machine with at least 16GB of RAM and 100GB of free space.
+- Note: DO NOT USE WSL DOES IT NOT SUPPORT YOCTO BUILDS
 
 1. [Install Docker](https://docs.docker.com/engine/install/), git, and wget.
 
@@ -42,8 +43,8 @@ sudo chmod 660 /var/run/docker.sock
 3. Clone and build:
 
 ```
-git clone https://github.com/os-vector/wire-os --recurse-submodules
-cd wire-os
+git clone https://github.com/TheBottiger/Neo-OS-oelinux --recurse-submodules
+cd Neo-OS
 ./build/build.sh -bt <dev/oskr> -bp <boot-passwd> -v <build-increment>
 # boot password not required for dev
 # example: ./build/build.sh -bt dev -v 1
@@ -52,12 +53,6 @@ cd wire-os
 ### Where is my OTA?
 
 `./_build/3.0.1.1.ota`
-
-##  Donate
-
-If you want to :P
-
-[![Buy Me A Coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/kercre123)
 
 ## Differences compared to normal Vector FW
 
