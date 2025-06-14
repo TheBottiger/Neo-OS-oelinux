@@ -1,6 +1,6 @@
 [submodule "anki/victor"]
 	path = anki/victor
-	url = https://github.com/TheBottiger/Neo-OS/tree/main
+	url = https://github.com/TheBottiger/Neo-OS.git
 [submodule "poky/poky"]
 	path = poky/poky
 	url = https://github.com/yoctoproject/poky
