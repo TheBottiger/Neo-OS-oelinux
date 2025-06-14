@@ -44,7 +44,7 @@ sudo chmod 660 /var/run/docker.sock
 
 ```
 git clone https://github.com/TheBottiger/Neo-OS-oelinux --recurse-submodules
-cd Neo-OS
+cd Neo-OS-oelinux
 ./build/build.sh -bt <dev/oskr> -bp <boot-passwd> -v <build-increment>
 # boot password not required for dev
 # example: ./build/build.sh -bt dev -v 23
