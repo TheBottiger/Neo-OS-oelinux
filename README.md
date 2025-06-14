@@ -4,7 +4,7 @@ The main repo for Neo-OS.
 
 Neo-OS serves as a nice matrix experience and maintained base for Vector CFW.
 
-This builds the OS, the /anki programs (`victor`), and creates a final OTA. This repo can be thought of as `wire-os-oelinux`.
+This builds the OS, the /anki programs (`victor`), and creates a final OTA. This repo can be thought of as `Neo-OS-oelinux`.
 
 ## Submodules
 
@@ -44,15 +44,15 @@ sudo chmod 660 /var/run/docker.sock
 
 ```
 git clone https://github.com/TheBottiger/Neo-OS-oelinux --recurse-submodules
-cd Neo-OS
+cd Neo-OS-oelinux
 ./build/build.sh -bt <dev/oskr> -bp <boot-passwd> -v <build-increment>
 # boot password not required for dev
-# example: ./build/build.sh -bt dev -v 1
+# example: ./build/build.sh -bt dev -v 23
 ```
 
 ### Where is my OTA?
 
-`./_build/3.0.1.1.ota`
+`./_build/3.0.1.23.ota`
 
 ## Differences compared to normal Vector FW
 
