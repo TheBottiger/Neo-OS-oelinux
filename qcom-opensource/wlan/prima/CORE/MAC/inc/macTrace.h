@@ -43,7 +43,6 @@
 
 #include "aniGlobal.h"
 
-
 #define MAC_TRACE_GET_MODULE_ID(data) ((data >> 8) & 0xff)
 #define MAC_TRACE_GET_MSG_ID(data)       (data & 0xffff)
 
@@ -61,6 +60,8 @@ tANI_U8* macTraceGetWdaMsgString( tANI_U16 wdaMsg );
 tANI_U8* macTraceGetSmeMsgString( tANI_U16 smeMsg );
 tANI_U8* macTraceGetModuleString( tANI_U8 moduleId);
 tANI_U8* macTraceGetInfoLogString( tANI_U16 infoLog );
+//eHalStatus pe_AcquireGlobalLock( tAniSirLim *psPe);
+//eHalStatus pe_ReleaseGlobalLock( tAniSirLim *psPe);
 
 tANI_U8* macTraceGetHDDWlanConnState(tANI_U16 connState);
 
@@ -91,9 +92,11 @@ DEFINE_DUMMY_TRACE_FUNC(macTraceGetLimSmeState);
 DEFINE_DUMMY_TRACE_FUNC(macTraceGetLimMlmState);
 
 #undef DEFINE_DUMMY_TRACE_FUNC
+
 #endif
 
 eHalStatus pe_AcquireGlobalLock( tAniSirLim *psPe);
 eHalStatus pe_ReleaseGlobalLock( tAniSirLim *psPe);
+
 #endif
 

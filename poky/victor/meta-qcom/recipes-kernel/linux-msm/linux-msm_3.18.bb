@@ -8,7 +8,7 @@ KERNEL_IMAGEDEST_apq8096 = "boot"
 
 SRC_DIR   =  "${WORKSPACE}/kernel/msm-3.18"
 S         =  "${WORKDIR}/kernel/msm-3.18"
-PR = "r5"
+PR = "r6"
 
 SRC_URI += "file://defconfig"
 
@@ -16,8 +16,10 @@ DEPENDS:apq8096 += "dtc-native"
 
 #FILES:kernel-dev += "/${KERNEL_IMAGEDEST}/${KERNEL_IMAGETYPE}-${KERNEL_VERSION}"
 
-KERNEL_CC = "${WORKSPACE}/old-toolchain/arm/bin/arm-linux-gnueabi-gcc"
-KERNEL_LD = "${WORKSPACE}/old-toolchain/arm/bin/arm-linux-gnueabi-ld"
+# KERNEL_CC = "${WORKSPACE}/old-toolchain/arm/bin/arm-linux-gnueabi-gcc"
+# KERNEL_LD = "${WORKSPACE}/old-toolchain/arm/bin/arm-linux-gnueabi-ld"
+
+CFLAGS += "-fno-strict-aliasing -fno-tree-vectorize"
 
 do_configure () {
     oe_runmake_call CC="${KERNEL_CC}" LD="${KERNEL_LD}" -C ${S} ARCH=${ARCH} ${KERNEL_EXTRA_ARGS} ${KERNEL_CONFIG}
