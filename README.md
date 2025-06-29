@@ -20,9 +20,6 @@ This builds the OS, the /anki programs (`victor`), and creates a final OTA. This
 
 ## Build
 
-- Note: you will need a somewhat beefy **x86_64 Linux** machine with at least 16GB of RAM and 100GB of free space.
-- Note: DO NOT USE WSL DOES IT NOT SUPPORT YOCTO BUILDS
-
 1. [Install Docker](https://docs.docker.com/engine/install/), git, and wget.
 
 2. Configure it so a regular user can use it:
@@ -42,12 +39,12 @@ git clone https://github.com/TheBottiger/Neo-OS-oelinux --recurse-submodules
 cd Neo-OS-oelinux
 ./build/build.sh -bt <dev/oskr> -bp <boot-passwd> -v <build-increment>
 # boot password not required for dev
-# example: ./build/build.sh -bt dev -v 23
+# example: ./build/build.sh -bt dev -v 24
 ```
 
 ### Where is my OTA?
 
-`./_build/3.0.1.23.ota`
+`./_build/3.0.1.24.ota`
 
 ## Differences compared to normal Vector FW
 
