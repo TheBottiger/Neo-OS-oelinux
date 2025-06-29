@@ -45,7 +45,9 @@
 #include <vos_types.h>
 #include <vos_memory.h>
 
+#ifdef FEATURE_WLAN_DIAG_SUPPORT
 #include <log_codes.h>
+#endif
 
 /*-------------------------------------------------------------------------- 
   Preprocessor definitions and constants

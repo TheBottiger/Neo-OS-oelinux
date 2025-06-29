@@ -105,6 +105,9 @@ typedef enum
 
 #ifdef TRACE_RECORD
 
+//#define CASE_RETURN_STRING( str )           \
+//    case ( ( str ) ): return( (tANI_U8*)(#str) );
+
 #define MTRACE(p) p
 #define NO_SESSION 0xFF
 
@@ -115,6 +118,7 @@ typedef enum
 
 #define CASE_RETURN_STRING( str )           \
     case ( ( str ) ): return( (tANI_U8*)(#str) );
+
 
 /*--------------------------------------------------------------------------
   Structure definition
