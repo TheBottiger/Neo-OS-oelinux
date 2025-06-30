@@ -1,10 +1,10 @@
-# Neo-Os
+# Neo-OS-oelinux
 
 The main repo for Neo-OS.
 
 Neo-OS serves as a nice matrix experience and maintained base for Vector CFW.
 
-This builds the OS, the /anki programs (`victor`), and creates a final OTA. This repo can be thought of as `Neo-OS`.
+This builds the OS, the /anki programs (`victor`), and creates a final OTA. This repo can be thought of as `Neo-OS-oelinux`.
 
 ## Submodules
 
