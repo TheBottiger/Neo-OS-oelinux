@@ -15,3 +15,6 @@
 [submodule "anki/vic-cloudless"]
 	path = anki/vic-cloudless
 	url = https://github.com/kercre123/vic-cloudless
+[submodule "EXTERNALS"]
+	path = EXTERNALS
+	url = https://github.com/TheBottiger/EXTERNALS.git
