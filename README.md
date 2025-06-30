@@ -1,10 +1,10 @@
-# wire-os
+# Neo-Os
 
-The main repo for WireOS.
+The main repo for Neo-OS.
 
-WireOS serves as a nice, stable, and maintained base for Vector CFW.
+Neo-OS serves as a nice matrix experience and maintained base for Vector CFW.
 
-This builds the OS, the /anki programs (`victor`), and creates a final OTA. This repo can be thought of as `wire-os-oelinux`.
+This builds the OS, the /anki programs (`victor`), and creates a final OTA. This repo can be thought of as `Neo-OS-oelinux`.
 
 ## Submodules
 
@@ -23,6 +23,7 @@ For those using wire-os as a base for their CFW, I change up recipes from time t
 ## Build
 
 - Note: you will need a somewhat beefy **x86_64 Linux** machine with at least 16GB of RAM and 100GB of free space.
+- Note: DO NOT USE WSL DOES IT NOT SUPPORT YOCTO BUILDS
 
 1. [Install Docker](https://docs.docker.com/engine/install/), git, and wget.
 
@@ -39,30 +40,27 @@ sudo chmod 660 /var/run/docker.sock
 3. Clone and build:
 
 ```
-git clone https://github.com/os-vector/wire-os --recurse-submodules
-cd wire-os
+git clone https://github.com/TheBottiger/Neo-OS-oelinux --recurse-submodules
+cd Neo-OS-oelinux
 ./build/build.sh -bt <dev/oskr> -bp <boot-passwd> -v <build-increment>
 # boot password not required for dev
-# example: ./build/build.sh -bt dev -v 1
-# <build-increment> is what the last number of the version string will be - if it's 1, it will be 3.0.1.1.ota
+# example: ./build/build.sh -bt dev -v 24
+# example: ./build/build.sh -bt dev -v 24
+# <build-increment> is what the last number of the version string will be - if it's 1, it will be 3.0.1.24.ota
 ```
 
 ### Where is my OTA?
 
+`./_build/3.0.1.24.ota`
 `./_build/3.0.1.1.ota`
 
-## Development path
+# Creating your own os 
 
-- **Most work should be done in `wire-os-victor`. Generally, that's all you need to have cloned. That can be worked on on a less beefy Linux laptop or M-series MacBook. If you have a modern base WireOS OTA installed; you can clone `wire-os-victor`, make changes, build that standalone, and deploy that to your robot. This repo is more meant to be cloned to a build server, and built less often.**
+- **Most work should be done in .[`wire-os-victor'](https://github.com/os-vector/wire-os-victor). Generally, that's all you need to have cloned. That can be worked on on a less beefy Linux laptop or M-series MacBook. If you have a modern base WireOS OTA installed; you can clone .[`wire-os-victor'](https://github.com/os-vector/wire-os-victor), make changes, build that standalone, and deploy that to your robot. This repo is more meant to be cloned to a build server, and built less often.**
 
-##  Donate
 
-If you want to :P
 
-[![Buy Me A Coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/kercre123)
-
-## Differences compared to normal Vector FW
-
+# What I added
 -   New OS base
     -   Yocto Walnascar rather than Jethro
         -   glibc 2.41 (latest as of 06-2025)
