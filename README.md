@@ -13,6 +13,10 @@ This builds the OS, the /anki programs (`victor`), and creates a final OTA. This
 - /anki/victor -> [wire-os-victor](https://github.com/os-vector/wire-os-victor) (main)
 - /anki/wired -> [wired](https://github.com/os-vector/wired) (main)
 
+## Prebuilt OTA:
+
+WireOS is in the dropdown box in [https://devsetup.froggitti.net/](https://devsetup.froggitti.net/). Put your unlocked bot into recovery mode (hold the button for 15 seconds on the charger), head to the site, choose wireOS, then go through the process.
+
 ## Update notes:
 
 For those using wire-os as a base for their CFW, I change up recipes from time to time and sometimes you have to clean a couple yourself.
@@ -93,6 +97,8 @@ cd Neo-OS-oelinux
 	-	If you are debugging `victor` and want to see backtraces in /var/log/messages, run this to enable those.
 -	`ddn [on/off]`
 	-	Turns on/off DevDoNothing, which makes the bot stand still until shaken.
+-	`reonboard`
+	-	Puts him back into onboarding mode without fully clearing user data
 -	`vmesg [-c|-t] <grep args>`
 	-	A wrapper for cat/tail /var/log/messages:
 
