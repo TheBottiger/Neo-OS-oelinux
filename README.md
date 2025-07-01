@@ -15,7 +15,7 @@ This builds the OS, the /anki programs (`victor`), and creates a final OTA. This
 
 ## Prebuilt OTA:
 
-WireOS is in the dropdown box in [https://devsetup.froggitti.net/](https://devsetup.froggitti.net/). Put your unlocked bot into recovery mode (hold the button for 15 seconds on the charger), head to the site, choose wireOS, then go through the process.
+Neo-OS is in the dropdown box in [https://devsetup.froggitti.net/](https://devsetup.froggitti.net/). Put your unlocked bot into recovery mode (hold the button for 15 seconds on the charger), head to the site, choose wireOS, then go through the process.
 
 ## Update notes:
 
@@ -26,8 +26,7 @@ For those using wire-os as a base for their CFW, I change up recipes from time t
 
 ## Build
 
-- Note: you will need a somewhat beefy **x86_64 Linux** machine with at least 16GB of RAM and 100GB of free space.
-- Note: DO NOT USE WSL DOES IT NOT SUPPORT YOCTO BUILDS
+- Note: you will need a pc or laptop 8-16 gb of ram and a good processor
 
 1. [Install Docker](https://docs.docker.com/engine/install/), git, and wget.
 
