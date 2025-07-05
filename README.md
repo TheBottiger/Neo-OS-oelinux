@@ -47,15 +47,14 @@ git clone https://github.com/TheBottiger/Neo-OS-oelinux --recurse-submodules
 cd Neo-OS-oelinux
 ./build/build.sh -bt <dev/oskr> -bp <boot-passwd> -v <build-increment>
 # boot password not required for dev
-# example: ./build/build.sh -bt dev -v 24
-# example: ./build/build.sh -bt dev -v 24
-# <build-increment> is what the last number of the version string will be - if it's 1, it will be 3.0.1.24.ota
+# example: ./build/build.sh -bt dev -v 25
+# example: ./build/build.sh -bt dev -v 25
+# <build-increment> is what the last number of the version string will be - if it's 1, it will be 3.0.1.25.ota
 ```
 
 ### Where is my OTA?
 
-`./_build/3.0.1.24.ota`
-`./_build/3.0.1.1.ota`
+`./_build/3.0.1.25.ota`
 
 # Creating your own os 
 
